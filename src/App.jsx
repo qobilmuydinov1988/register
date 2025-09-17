@@ -18,25 +18,33 @@ function App() {
       dispatch({ type: "AUTH_READY" });
     });
   }, []);
-  const routes = createBrowserRouter([
+  const routes = createBrowserRouter(
+    [
+      {
+        path: "/",
+        element: <MainLayout />,
+        children: [
+          { index: true, element: user ? <Home /> : <Navigate to="/signin" /> }, // 👈 user bo‘lmasa signin ga yo‘naltir
+        ],
+      },
+      {
+        path: "/signup",
+        element: user ? <Navigate to={"/"} replace /> : <SignUp />,
+      },
+      {
+        path: "/signin",
+        element: user ? <Navigate to={"/"} replace /> : <SignIn />,
+      },
+      {
+        path: "*", // 👈 fallback route
+        element: <Navigate to="/" replace />,
+      },
+    ],
     {
-      path: "/",
-      element: <MainLayout />,
-      children: [{ index: true, element: user ? <Home /> : null }],
-    },
-    {
-      path: "/signup",
-      element: user ? <Navigate to={"/"} replace /> : <SignUp />,
-    },
-    {
-      path: "/signin",
-      element: user ? <Navigate to={"/"} replace /> : <SignIn />,
-    },
-    {
-      basename: "/sign-in-app", // 👈 GitHub Pages repo nomi
-    },
-  ]);
-  0;
+      basename: "/sign-in-app", // GitHub repo nomi
+    }
+  );
+
   return <div>{readyAuth && <RouterProvider router={routes} />}</div>;
 }
 
