@@ -24,7 +24,7 @@ function App() {
         path: "/",
         element: <MainLayout />,
         children: [
-          { index: true, element: user ? <Home /> : <Navigate to="/signin" /> }, // 👈 user bo‘lmasa signin ga yo‘naltir
+          { index: true, element: user ? <Home /> : null }, // 👈 user bo‘lmasa signin ga yo‘naltir
         ],
       },
       {
@@ -34,6 +34,10 @@ function App() {
       {
         path: "/signin",
         element: user ? <Navigate to={"/"} replace /> : <SignIn />,
+      },
+      {
+        path: "*", // 👈 fallback route
+        element: <Navigate to="/" replace />,
       },
     ],
     {
