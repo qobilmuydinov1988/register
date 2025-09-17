@@ -32,6 +32,9 @@ function App() {
       path: "/signin",
       element: user ? <Navigate to={"/"} replace /> : <SignIn />,
     },
+    {
+      basename: "/sign-in-app", // 👈 GitHub Pages repo nomi
+    },
   ]);
   0;
   return <div>{readyAuth && <RouterProvider router={routes} />}</div>;
