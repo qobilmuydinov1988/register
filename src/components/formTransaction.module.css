@@ -1,0 +1,30 @@
+.box {
+  border: 1px solid #8888;
+  width: 500px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 15px;
+  border-radius: 7px;
+  padding-bottom: 25px;
+}
+
+.box form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.box label {
+  display: flex;
+  flex-direction: column;
+}
+.box span {
+  margin-bottom: 5px;
+}
+.box form input {
+  padding: 7px 12px;
+  margin-bottom: 12px;
+}
+.box button {
+  cursor: pointer;
+  padding: 7px 12px;
+}
