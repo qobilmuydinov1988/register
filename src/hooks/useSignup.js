@@ -11,8 +11,8 @@ import { toast } from "sonner";
 export function useSignup() {
   const [loading, setLoading] = useState(false);
   const { dispatch } = useGlobalcontext();
-  console.log(loading);
-  const signUpUser = (userName, img, email, password) => {
+
+  const signUpUser = (userName, email, password) => {
     setLoading(true);
 
     createUserWithEmailAndPassword(auth, email, password)
