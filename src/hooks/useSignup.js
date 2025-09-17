@@ -20,7 +20,6 @@ export function useSignup() {
         const user = userCredential.user;
         await updateProfile(user, {
           displayName: userName,
-          photoURL: img,
         });
 
         dispatch({ type: "PROFILE", payload: user.displayName });
