@@ -35,10 +35,6 @@ function App() {
         path: "/signin",
         element: user ? <Navigate to={"/"} replace /> : <SignIn />,
       },
-      {
-        path: "*", // 👈 fallback route
-        element: <Navigate to="/" replace />,
-      },
     ],
     {
       basename: "/sign-in-app", // GitHub repo nomi
