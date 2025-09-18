@@ -77,10 +77,7 @@ function App() {
         <HashRouter>
           <Routes>
             <Route path="/" element={<MainLayout />}>
-              <Route
-                index
-                element={user ? <Home /> : <Navigate to="/signin" replace />}
-              />
+              <Route index element={user ? <Home /> : null} />
             </Route>
 
             <Route
