@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./auth.module.css";
-import { useSignup } from "../hooks/useSignup";
+import { useSignup } from "../hooks/useSignup.js";
 function SignUp() {
   const isLoading = false;
   const [userInfo, setUserInfo] = useState({

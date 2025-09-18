@@ -4,8 +4,8 @@ import {
   createUserWithEmailAndPassword,
   updateProfile,
 } from "firebase/auth";
-import { auth } from "../firebase/firebase-config";
-import { useGlobalcontext } from "./useGlobalcontext";
+import { auth } from "../firebase/firebase-config.js";
+import { useGlobalcontext } from "./useGlobalcontext.js";
 import { useState } from "react";
 import { toast } from "sonner";
 export function useSignup() {

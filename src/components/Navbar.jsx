@@ -2,8 +2,8 @@ import { NavLink, Link } from "react-router-dom";
 import "../index.css";
 import { onAuthStateChanged } from "firebase/auth";
 import { signOut } from "firebase/auth";
-import { auth } from "../firebase/firebase-config";
-import { useGlobalcontext } from "../hooks/useGlobalcontext";
+import { auth } from "../firebase/firebase-config.js";
+import { useGlobalcontext } from "../hooks/useGlobalcontext.js";
 
 import { toast } from "sonner";
 import { useEffect } from "react";

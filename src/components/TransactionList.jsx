@@ -1,5 +1,5 @@
 import styles from "./TransactionList.module.css";
-import { useFirestore } from "../hooks/useFireStoreMethod";
+import { useFirestore } from "../hooks/useFireStoreMethod.js";
 import { FaRegTrashCan } from "react-icons/fa6";
 import { CiEdit } from "react-icons/ci";
 function TransactionList({ transactions, selectProductId, selectedId }) {

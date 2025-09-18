@@ -1,10 +1,10 @@
-import TransactionList from "../components/TransactionList";
-import { useCollection } from "../hooks/getCollection";
-import { useGlobalcontext } from "../hooks/useGlobalcontext";
+import TransactionList from "../components/TransactionList.jsx";
+import { useCollection } from "../hooks/getCollection.js";
+import { useGlobalcontext } from "../hooks/useGlobalcontext.js";
 import { useState } from "react";
 
 import styles from "../components/formTransaction.module.css";
-import { useFirestore } from "../hooks/useFireStoreMethod";
+import { useFirestore } from "../hooks/useFireStoreMethod.js";
 
 import { toast } from "sonner";
 

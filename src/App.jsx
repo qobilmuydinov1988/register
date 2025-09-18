@@ -51,13 +51,13 @@ function App() {
 export default App;
 */
 import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
-import Home from "./pages/Home";
-import MainLayout from "./layouts/MainLayout";
-import SignIn from "./pages/SignIn";
-import { auth } from "./firebase/firebase-config";
-import SignUp from "./pages/SignUp";
+import Home from "./pages/Home.jsx";
+import MainLayout from "./layouts/MainLayout.jsx";
+import SignIn from "./pages/SignIn.jsx";
+import { auth } from "./firebase/firebase-config.js";
+import SignUp from "./pages/SignUp.jsx";
 import { useEffect } from "react";
-import { useGlobalcontext } from "./hooks/useGlobalcontext";
+import { useGlobalcontext } from "./hooks/useGlobalcontext.js";
 import { onAuthStateChanged } from "firebase/auth";
 
 function App() {
