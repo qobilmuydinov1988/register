@@ -7,11 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "preview": "vite preview"
   },
-  "homepage": "https://qobilmuydinov1988.github.io/sign-in-app",
   "dependencies": {
     "firebase": "^12.2.1",
     "react": "^18.3.1",
