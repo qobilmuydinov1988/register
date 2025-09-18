@@ -30,7 +30,7 @@ function reducer(state, action) {
   }
 }
 
-function GlobalcontextProvider({ children }) {
+function GlobalContextProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, {
     user: null,
     userName: null,
@@ -46,4 +46,4 @@ function GlobalcontextProvider({ children }) {
   );
 }
 
-export default GlobalcontextProvider;
+export default GlobalContextProvider;
