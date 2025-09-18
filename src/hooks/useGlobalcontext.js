@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ContextProvider } from "../context/GlobalContextProvider.jsx";
+import { ContextProvider } from "../context/globalContext";
 export function useGlobalcontext() {
   const context = useContext(ContextProvider);
 
