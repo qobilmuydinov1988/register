@@ -6,9 +6,8 @@ import GlobalcontextProvider from "./context/GlobalContextProvider.jsx";
 createRoot(document.getElementById("root")).render(
   <>
     <GlobalcontextProvider>
-      <Toaster position="top-center" richColors />
-
       <App />
     </GlobalcontextProvider>
+    <Toaster position="top-center" richColors />
   </>
 );

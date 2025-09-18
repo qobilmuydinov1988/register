@@ -1,11 +1,11 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Navigate } from "react-router";
 import Home from "./pages/Home";
 import MainLayout from "./layouts/MainLayout";
 import SignIn from "./pages/SignIn";
 import { auth } from "./firebase/firebase-config";
 import SignUp from "./pages/SignUp";
 import { useEffect } from "react";
-import { Navigate } from "react-router-dom";
+
 import { useGlobalcontext } from "./hooks/useGlobalcontext";
 import { onAuthStateChanged } from "firebase/auth";
 function App() {
