@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { db } from "../firebase/firebase-config.js";
-import { useGlobalcontext } from "./useGlobalcontext";
+
 import { onSnapshot, collection, query, where } from "firebase/firestore";
 
 export function useCollection(collectionName, q) {
